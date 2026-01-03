@@ -62,14 +62,17 @@ const page = () => {
             <label className="block text-sm font-medium text-gray-600 mb-1">
               Email
             </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+           <input
+  type="email"
+  name="email"
+  placeholder="you@example.com"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  className="w-full px-4 py-2 rounded-lg border border-gray-300 
+             text-gray-900 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-green-400"
+/>
+
           </div>
 
           <div>
@@ -82,8 +85,9 @@ const page = () => {
               placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+  className="w-full px-4 py-2 rounded-lg border border-gray-300 
+             text-gray-900 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-green-400"            />
           </div>
 
           {error && (

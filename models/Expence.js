@@ -22,7 +22,7 @@ const ExpenceSchema = new mongoose.Schema({
         required:true
     },
     
-})
+}, { timestamps: true })
 
 export default mongoose.models.Expence || 
 mongoose .model("Expence",ExpenceSchema)

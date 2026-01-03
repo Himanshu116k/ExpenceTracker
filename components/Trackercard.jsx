@@ -10,9 +10,7 @@ const Trackercard = () => {
   const [amount, setAmount] = useState("");
   const [desc, setDesc] = useState("");
   const router = useRouter();
-  useEffect(() => {
-    router.refresh();
-  }, []);
+ 
   if (loading) return null;
 
   const handlSubmit = async (e) => {
@@ -39,6 +37,8 @@ const Trackercard = () => {
       setName("");
       setAmount("");
       setDesc("");
+          router.refresh();
+
     } catch (err) {
       alert("Something went wrong");
       console.log(err);
@@ -59,7 +59,7 @@ const Trackercard = () => {
         {/* Expense Summary */}
         <div className="bg-zinc-950 border border-zinc-800 rounded-xl p-6 flex flex-col items-center mb-10">
           <p className="text-gray-400 text-sm">Total expenses (This month)</p>
-          <h2 className="text-4xl font-bold mt-2 text-red-500">₹12,000</h2>
+          <h2 className="text-4xl font-bold mt-2 text-red-500">Shown Below</h2>
         </div>
 
         {/* Add Expense */}

@@ -70,8 +70,9 @@ const page = () => {
               placeholder="Enter your name"
               value={name}                              // ✅ added
               onChange={(e) => setName(e.target.value)} // ✅ added
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+  className="w-full px-4 py-2 rounded-lg border border-gray-300 
+             text-gray-900 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-green-400"            />
           </div>
 
           <div>
@@ -84,8 +85,9 @@ const page = () => {
               placeholder="you@example.com"
               value={email}                              // ✅ added
               onChange={(e) => setEmail(e.target.value)} // ✅ added
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+  className="w-full px-4 py-2 rounded-lg border border-gray-300 
+             text-gray-900 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-green-400"            />
           </div>
 
           <div>
@@ -98,8 +100,9 @@ const page = () => {
               placeholder="••••••••"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+  className="w-full px-4 py-2 rounded-lg border border-gray-300 
+             text-gray-900 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-green-400"            />
           </div>
 
           <div>
@@ -112,8 +115,9 @@ const page = () => {
               placeholder="••••••••"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-            />
+  className="w-full px-4 py-2 rounded-lg border border-gray-300 
+             text-gray-900 placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-green-400"            />
           </div>
 
           {error && (
